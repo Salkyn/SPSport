@@ -27,11 +27,11 @@ public class JSONRequests {
     private static Context context;
     private static Entrainement ent;
 
-    public JSONRequests(Context c, Activity a, Entrainement e) {
-        TAG = "tag";
-        context = c;
-        activity = a;
-        this.ent = e;
+    public JSONRequests(Context c, Activity a) {
+        this.TAG = "tag";
+        this.context = c;
+        this.activity = a;
+        this.ent = AppController.getInstance().getEntrainement();
     }
 
     public static void setEntrainement() {

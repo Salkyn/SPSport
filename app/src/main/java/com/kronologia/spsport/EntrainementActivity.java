@@ -21,9 +21,9 @@ public class EntrainementActivity extends Activity {
 
         setContentView(R.layout.activity_entrainement);
 
-        Entrainement e = new Entrainement(1, getApplicationContext(), this);
+       AppController.getInstance().createEntrainement(1, getApplicationContext(), this);
 
-        JSONRequests j = new JSONRequests(getApplicationContext(), this, e);
+        JSONRequests j = new JSONRequests(getApplicationContext(), this);
         j.setEntrainement();
 
         /*Entrainement e = new Entrainement(29, getApplicationContext(), this);
