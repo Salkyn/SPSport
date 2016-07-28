@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SP Sport</string>
+    <string name="valider">Valider</string>
+    <string name="fin">Fin</string>
+
+    <string name="retour_blessure">Retour de blessure</string>
+    <string name="nos_missions">Nos missions</string>
+    <string name="rcp">Réanimation Cardio Pulmonaire</string>
+    <string name="type_session">Type de session</string>
+    <string name="seance_solo">Séance solo</string>
+    <string name="circuit_training">Circuit Training</string>
+    <string name="seance_groupe">Séance de groupe</string>
+
+    <string name="materiel_dispo">Matériel disponible</string>
+    <string name="matos_chaise">Chaise</string>
+    <string name="matos_banc">Banc</string>
+    <string name="title_activity_circuit_training">CircuitTrainingActivity</string>
+</resources>
