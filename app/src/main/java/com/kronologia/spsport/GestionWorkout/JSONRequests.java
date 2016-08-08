@@ -26,6 +26,7 @@ public class JSONRequests {
     private static Activity activity;
     private static Context context;
     private static Entrainement ent;
+    private static int SPEED = 1; //Vitesse réelle à 1, augmenter pour débug
 
     public JSONRequests(Context c, Activity a) {
         this.TAG = "tag";
@@ -51,12 +52,13 @@ public class JSONRequests {
                     for (int i = 0; i < response.length(); i++) {
                         JSONObject JSONexercice = (JSONObject) response.get(i);
                         String nom = JSONexercice.getString("nom");
-                        int temps = JSONexercice.getInt("temps")*1000;
+                        int temps = JSONexercice.getInt("temps")*1000/SPEED;
                         ent.setExercice(i, temps, nom);
 
                         Log.i(TAG, nom + " " + temps + "ms");
                     }
 
+                    ent.setTotalTime();
                     ent.start(0);
 
 
