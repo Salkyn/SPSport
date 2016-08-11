@@ -13,7 +13,6 @@ import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.kronologia.spsport.AppController;
-import com.kronologia.spsport.EntrainementActivity;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -23,15 +22,11 @@ public class JSONRequests {
 
     private static String TAG = "t";
     private static String baseUrl, file;
-    private static Activity activity;
-    private static Context context;
     private static Entrainement ent;
     private static int SPEED = 1; //Vitesse réelle à 1, augmenter pour débug
 
     public JSONRequests(Context c, Activity a) {
         this.TAG = "tag";
-        this.context = c;
-        this.activity = a;
         this.ent = AppController.getInstance().getEntrainement();
     }
 

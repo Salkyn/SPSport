@@ -2,16 +2,12 @@ package com.kronologia.spsport;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.os.CountDownTimer;
 import android.view.WindowManager;
-import android.widget.TextView;
+import android.widget.ProgressBar;
 
-import com.kronologia.spsport.GestionWorkout.Entrainement;
 import com.kronologia.spsport.GestionWorkout.JSONRequests;
 
 public class EntrainementActivity extends Activity {
-
-    public TextView countdown;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,14 +17,17 @@ public class EntrainementActivity extends Activity {
 
         setContentView(R.layout.activity_entrainement);
 
-       AppController.getInstance().createEntrainement(1, getApplicationContext(), this);
+        //ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressWOBar);
+
+        /*progressBar.setMax(AppController.getInstance().getEntrainement().getTotalTime());
+
+        AppController.getInstance().getEntrainement().setTotalTime();
+        AppController.getInstance().getEntrainement().start(0);*/
+
+        AppController.getInstance().createEntrainement(1, getApplicationContext(), this);
 
         JSONRequests j = new JSONRequests(getApplicationContext(), this);
         j.setEntrainement();
-
-        /*Entrainement e = new Entrainement(29, getApplicationContext(), this);
-        e.create();
-        e.start(0);*/
 
     }
 }

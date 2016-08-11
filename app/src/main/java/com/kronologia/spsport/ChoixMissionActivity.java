@@ -22,7 +22,8 @@ public class ChoixMissionActivity extends Activity {
     public View.OnClickListener rcpActListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Intent intent = new Intent(ChoixMissionActivity.this, ParametresSessionActivity.class);
+            //TODO passer le type d'entrainement en sharedPreferences
+            Intent intent = new Intent(ChoixMissionActivity.this, EntrainementActivity.class/*SummaryEntrainementActivity.class*/);
             ChoixMissionActivity.this.startActivity(intent);
         }
     };

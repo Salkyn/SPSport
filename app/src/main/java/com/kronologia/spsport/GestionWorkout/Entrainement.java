@@ -47,7 +47,7 @@ public class Entrainement {
     }
 
     public void start(final int numExo) {
-        Log.i("Entrainement", "Début exo n°" + numExo);
+        Log.i("Entrainement", "Début exo n°" + numExo + " : " + exos[numExo].getName());
         final TextView tvChrono = (TextView) activity.findViewById(R.id.chronometre);
         TextView tvNomSuivant = (TextView) activity.findViewById(R.id.nomExerciceSuivant);
         final ImageView ivExercice = (ImageView) activity.findViewById(R.id.imageExo);
