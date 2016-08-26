@@ -11,6 +11,10 @@
     <string name="seance_solo">Séance solo</string>
     <string name="circuit_training">Circuit Training</string>
     <string name="seance_groupe">Séance de groupe</string>
+    <string name="echauffement">Echauffement</string>
+    <string name="travail">Travail</string>
+    <string name="repos">Repos</string>
+    <string name="recuperation">Récupération</string>
 
     <string name="materiel_dispo">Matériel disponible</string>
     <string name="matos_chaise">Chaise</string>

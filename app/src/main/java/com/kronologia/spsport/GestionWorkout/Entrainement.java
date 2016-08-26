@@ -90,6 +90,7 @@ public class Entrainement {
 
     public void setExercice(int i, int temps, String nom) {
         this.exos[i] = new Exercice(temps, nom, context, activity);
+        Log.d("Entrainement", "new Exo "+temps+" "+nom);
     }
 
     public void setTotalTime() {
